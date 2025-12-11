@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PatternBlueprint Design System</title>
+  <link rel="stylesheet" href="components/ui/index.css">
+  <style>
+    .demo-section {
+      padding: var(--pb-space-8) 0;
+      border-bottom: 1px solid var(--pb-border-subtle);
+    }
+    .demo-section:last-child {
+      border-bottom: none;
+    }
+    .color-swatch {
+      width: 100%;
+      height: 60px;
+      border-radius: var(--pb-radius-md);
+      display: flex;
+      align-items: flex-end;
+      padding: var(--pb-space-2);
+    }
+    .color-swatch span {
+      font-size: var(--pb-text-xs);
+      font-family: var(--pb-font-mono);
+    }
+    .demo-box {
+      background: var(--pb-bg-tertiary);
+      border: 1px dashed var(--pb-border-default);
+      padding: var(--pb-space-4);
+      text-align: center;
+      border-radius: var(--pb-radius-sm);
+      color: var(--pb-text-tertiary);
+    }
+  </style>
+</head>
+<body class="pb-page">
+  
+  <main class="pb-page-content">
+    <!-- Header -->
+    <section class="pb-section pb-bg-secondary">
+      <div class="pb-container">
+        <p class="pb-overline pb-text-blue pb-mb-4">Design System v1.0</p>
+        <h1 class="pb-h1 pb-mb-4">PatternBlueprint</h1>
+        <p class="pb-lead">A minimal, clean design system built for dark interfaces with <span class="pb-text-blue">Mind Blue</span> and <span class="pb-text-gold">Pattern Gold</span> accents.</p>
+      </div>
+    </section>
+
+    <!-- Colors -->
+    <section class="demo-section">
+      <div class="pb-container">
+        <h2 class="pb-h3 pb-mb-8">Color Palette</h2>
+        
+        <h3 class="pb-h5 pb-mb-4 pb-text-secondary">Mind Blue</h3>
+        <div class="pb-grid pb-grid-cols-2 pb-md-grid-cols-5 pb-gap-3 pb-mb-8">
+          <div class="color-swatch" style="background: var(--pb-blue-100);"><span style="color: #000;">100</span></div>
+          <div class="color-swatch" style="background: var(--pb-blue-300);"><span style="color: #000;">300</span></div>
+          <div class="color-swatch" style="background: var(--pb-blue-500);"><span>500</span></div>
+          <div class="color-swatch" style="background: var(--pb-blue-700);"><span>700</span></div>
+          <div class="color-swatch" style="background: var(--pb-blue-900);"><span>900</span></div>
+        </div>
+        
+        <h3 class="pb-h5 pb-mb-4 pb-text-secondary">Pattern Gold</h3>
+        <div class="pb-grid pb-grid-cols-2 pb-md-grid-cols-5 pb-gap-3 pb-mb-8">
+          <div class="color-swatch" style="background: var(--pb-gold-100);"><span style="color: #000;">100</span></div>
+          <div class="color-swatch" style="background: var(--pb-gold-300);"><span style="color: #000;">300</span></div>
+          <div class="color-swatch" style="background: var(--pb-gold-500);"><span style="color: #000;">500</span></div>
+          <div class="color-swatch" style="background: var(--pb-gold-700);"><span>700</span></div>
+          <div class="color-swatch" style="background: var(--pb-gold-900);"><span>900</span></div>
+        </div>
+
+        <h3 class="pb-h5 pb-mb-4 pb-text-secondary">Background Layers</h3>
+        <div class="pb-grid pb-grid-cols-2 pb-md-grid-cols-4 pb-gap-3">
+          <div class="color-swatch" style="background: var(--pb-bg-primary); border: 1px solid var(--pb-border-default);"><span>Primary</span></div>
+          <div class="color-swatch" style="background: var(--pb-bg-secondary);"><span>Secondary</span></div>
+          <div class="color-swatch" style="background: var(--pb-bg-tertiary);"><span>Tertiary</span></div>
+          <div class="color-swatch" style="background: var(--pb-bg-elevated);"><span>Elevated</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="demo-section">
+      <div class="pb-container">
+        <h2 class="pb-h3 pb-mb-8">Typography</h2>
+        
+        <div class="pb-mb-8">
+          <h1 class="pb-h1 pb-mb-2">H1 — The mind sees patterns</h1>
+          <h2 class="pb-h2 pb-mb-2">H2 — The mind sees patterns</h2>
+          <h3 class="pb-h3 pb-mb-2">H3 — The mind sees patterns</h3>
+          <h4 class="pb-h4 pb-mb-2">H4 — The mind sees patterns</h4>
+          <h5 class="pb-h5 pb-mb-2">H5 — The mind sees patterns</h5>
+          <h6 class="pb-h6">H6 — The mind sees patterns</h6>
+        </div>
+        
+        <div class="pb-grid pb-grid-cols-1 pb-md-grid-cols-2 pb-gap-8">
+          <div>
+            <p class="pb-overline pb-mb-2">Body Large</p>
+            <p class="pb-body-lg pb-mb-6">Pattern recognition is fundamental to how we understand the world. Our brains are wired to identify repeating structures.</p>
+            
+            <p class="pb-overline pb-mb-2">Body Default</p>
+            <p class="pb-body pb-mb-6">Pattern recognition is fundamental to how we understand the world. Our brains are wired to identify repeating structures and make predictions.</p>
+            
+            <p class="pb-overline pb-mb-2">Body Small</p>
+            <p class="pb-body-sm">Pattern recognition is fundamental to how we understand the world. Our brains are wired to identify repeating structures.</p>
+          </div>
+          <div>
+            <p class="pb-overline pb-mb-2">Lead Text</p>
+            <p class="pb-lead pb-mb-6">A larger introductory paragraph style for key messaging.</p>
+            
+            <p class="pb-overline pb-mb-2">Caption</p>
+            <p class="pb-caption pb-mb-6">Used for supplementary information and image captions.</p>
+            
+            <p class="pb-overline pb-mb-2">Code</p>
+            <p class="pb-body">Inline code: <code class="pb-code">const pattern = new Blueprint();</code></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="demo-section">
+      <div class="pb-container">
+        <h2 class="pb-h3 pb-mb-8">Buttons</h2>
+        
+        <h3 class="pb-h6 pb-mb-4 pb-text-secondary">Variants</h3>
+        <div class="pb-flex pb-flex-wrap pb-gap-4 pb-items-center pb-mb-8">
+          <button class="pb-btn pb-btn-primary">Primary</button>
+          <button class="pb-btn pb-btn-secondary">Secondary</button>
+          <button class="pb-btn pb-btn-outline">Outline</button>
+          <button class="pb-btn pb-btn-outline-blue">Outline Blue</button>
+          <button class="pb-btn pb-btn-outline-gold">Outline Gold</button>
+          <button class="pb-btn pb-btn-ghost">Ghost</button>
+        </div>
+        
+        <h3 class="pb-h6 pb-mb-4 pb-text-secondary">Sizes</h3>
+        <div class="pb-flex pb-flex-wrap pb-gap-4 pb-items-center pb-mb-8">
+          <button class="pb-btn pb-btn-primary pb-btn-sm">Small</button>
+          <button class="pb-btn pb-btn-primary">Default</button>
+          <button class="pb-btn pb-btn-primary pb-btn-lg">Large</button>
+          <button class="pb-btn pb-btn-primary pb-btn-xl">Extra Large</button>
+        </div>
+        
+        <h3 class="pb-h6 pb-mb-4 pb-text-secondary">States</h3>
+        <div class="pb-flex pb-flex-wrap pb-gap-4 pb-items-center">
+          <button class="pb-btn pb-btn-primary">Active</button>
+          <button class="pb-btn pb-btn-primary" disabled>Disabled</button>
+          <button class="pb-btn pb-btn-outline pb-btn-full" style="max-width: 300px;">Full Width</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="demo-section">
+      <div class="pb-container">
+        <h2 class="pb-h3 pb-mb-8">Cards</h2>
+        
+        <div class="pb-grid pb-grid-cols-1 pb-md-grid-cols-3 pb-gap-6">
+          <!-- Default Card -->
+          <div class="pb-card">
+            <div class="pb-card-header">
+              <h4 class="pb-h6">Default Card</h4>
+            </div>
+            <div class="pb-card-body">
+              <p class="pb-body-sm">The standard card with subtle border and secondary background.</p>
+            </div>
+            <div class="pb-card-footer">
+              <button class="pb-btn pb-btn-ghost pb-btn-sm">Learn more</button>
+            </div>
+          </div>
+
+          <!-- Elevated Card -->
+          <div class="pb-card pb-card-elevated">
+            <div class="pb-card-header">
+              <h4 class="pb-h6">Elevated Card</h4>
+            </div>
+            <div class="pb-card-body">
+              <p class="pb-body-sm">Card with shadow for visual hierarchy and depth.</p>
+            </div>
+            <div class="pb-card-footer">
+              <button class="pb-btn pb-btn-primary pb-btn-sm">Action</button>
+            </div>
+          </div>
+
+          <!-- Outlined Card -->
+          <div class="pb-card pb-card-outlined">
+            <div class="pb-card-header">
+              <h4 class="pb-h6">Outlined Card</h4>
+            </div>
+            <div class="pb-card-body">
+              <p class="pb-body-sm">Transparent background with visible border for lightweight feel.</p>
+            </div>
+            <div class="pb-card-footer">
+              <button class="pb-btn pb-btn-outline pb-btn-sm">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pb-grid pb-grid-cols-1 pb-md-grid-cols-2 pb-gap-6 pb-mt-6">
+          <!-- Blue Accent Card -->
+          <div class="pb-card pb-card-blue">
+            <div class="pb-card-body">
+              <p class="pb-overline pb-text-blue pb-mb-2">Mind Blue Accent</p>
+              <h4 class="pb-h5 pb-mb-2">Pattern Recognition</h4>
+              <p class="pb-body-sm">Cards with colored left borders for categorization and visual grouping.</p>
+            </div>
+          </div>
+
+          <!-- Gold Accent Card -->
+          <div class="pb-card pb-card-gold">
+            <div class="pb-card-body">
+              <p class="pb-overline pb-text-gold pb-mb-2">Pattern Gold Accent</p>
+              <h4 class="pb-h5 pb-mb-2">Blueprint Mapping</h4>
+              <p class="pb-body-sm">Cards with colored left borders for categorization and visual grouping.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pb-mt-6">
+          <!-- Interactive Card -->
+          <div class="pb-card pb-card-interactive" style="max-width: 400px;">
+            <div class="pb-card-body">
+              <h4 class="pb-h6 pb-mb-2">Interactive Card</h4>
+              <p class="pb-body-sm pb-text-tertiary">Hover over this card to see the interactive state.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="demo-section">
+      <div class="pb-container">
+        <h2 class="pb-h3 pb-mb-8">Responsive Grid</h2>
+        
+        <h3 class="pb-h6 pb-mb-4 pb-text-secondary">Fixed Columns (1 → 2 → 4)</h3>
+        <div class="pb-grid pb-grid-cols-1 pb-sm-grid-cols-2 pb-lg-grid-cols-4 pb-gap-4 pb-mb-8">
+          <div class="demo-box">1</div>
+          <div class="demo-box">2</div>
+          <div class="demo-box">3</div>
+          <div class="demo-box">4</div>
+        </div>
+        
+        <h3 class="pb-h6 pb-mb-4 pb-text-secondary">Auto-fit Grid (min: 280px)</h3>
+        <div class="pb-grid pb-grid-auto-md pb-gap-4 pb-mb-8">
+          <div class="demo-box">Auto 1</div>
+          <div class="demo-box">Auto 2</div>
+          <div class="demo-box">Auto 3</div>
+          <div class="demo-box">Auto 4</div>
+          <div class="demo-box">Auto 5</div>
+        </div>
+
+        <h3 class="pb-h6 pb-mb-4 pb-text-secondary">12-Column with Spans</h3>
+        <div class="pb-grid pb-grid-cols-12 pb-gap-4">
+          <div class="demo-box pb-col-span-12">span-12</div>
+          <div class="demo-box pb-col-span-6">span-6</div>
+          <div class="demo-box pb-col-span-6">span-6</div>
+          <div class="demo-box pb-col-span-4">span-4</div>
+          <div class="demo-box pb-col-span-4">span-4</div>
+          <div class="demo-box pb-col-span-4">span-4</div>
+          <div class="demo-box pb-col-span-3">span-3</div>
+          <div class="demo-box pb-col-span-3">span-3</div>
+          <div class="demo-box pb-col-span-3">span-3</div>
+          <div class="demo-box pb-col-span-3">span-3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spacing -->
+    <section class="demo-section">
+      <div class="pb-container">
+        <h2 class="pb-h3 pb-mb-8">Spacing Scale</h2>
+        
+        <div class="pb-grid pb-grid-cols-2 pb-md-grid-cols-4 pb-lg-grid-cols-6 pb-gap-4">
+          <div>
+            <div class="demo-box" style="height: var(--pb-space-1);"></div>
+            <p class="pb-caption pb-mt-2">space-1 (4px)</p>
+          </div>
+          <div>
+            <div class="demo-box" style="height: var(--pb-space-2);"></div>
+            <p class="pb-caption pb-mt-2">space-2 (8px)</p>
+          </div>
+          <div>
+            <div class="demo-box" style="height: var(--pb-space-4);"></div>
+            <p class="pb-caption pb-mt-2">space-4 (16px)</p>
+          </div>
+          <div>
+            <div class="demo-box" style="height: var(--pb-space-6);"></div>
+            <p class="pb-caption pb-mt-2">space-6 (24px)</p>
+          </div>
+          <div>
+            <div class="demo-box" style="height: var(--pb-space-8);"></div>
+            <p class="pb-caption pb-mt-2">space-8 (32px)</p>
+          </div>
+          <div>
+            <div class="demo-box" style="height: var(--pb-space-12);"></div>
+            <p class="pb-caption pb-mt-2">space-12 (48px)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="pb-section pb-bg-secondary">
+      <div class="pb-container pb-text-center">
+        <p class="pb-overline pb-text-tertiary pb-mb-2">PatternBlueprint</p>
+        <p class="pb-caption">Design System for patternblueprint.com</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
+

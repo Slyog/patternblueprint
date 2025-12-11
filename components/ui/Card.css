@@ -1,0 +1,114 @@
+/**
+ * PatternBlueprint Design System
+ * Card Component
+ */
+
+/* ══════════════════════════════════════════════════════════════
+   BASE CARD
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-card {
+  background-color: var(--pb-bg-secondary);
+  border: 1px solid var(--pb-border-subtle);
+  border-radius: var(--pb-radius-lg);
+  overflow: hidden;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CARD VARIANTS
+   ══════════════════════════════════════════════════════════════ */
+
+/* Elevated - with shadow */
+.pb-card-elevated {
+  background-color: var(--pb-bg-tertiary);
+  border-color: var(--pb-border-default);
+  box-shadow: var(--pb-shadow-md);
+}
+
+/* Outlined - stronger border */
+.pb-card-outlined {
+  background-color: transparent;
+  border-color: var(--pb-border-strong);
+}
+
+/* Glass - subtle transparency effect */
+.pb-card-glass {
+  background-color: rgba(18, 18, 26, 0.8);
+  border-color: var(--pb-border-default);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Blue accent */
+.pb-card-blue {
+  border-color: var(--pb-blue-700);
+  border-left-width: 3px;
+}
+
+/* Gold accent */
+.pb-card-gold {
+  border-color: var(--pb-gold-700);
+  border-left-width: 3px;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CARD STRUCTURE
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-card-header {
+  padding: var(--pb-space-5) var(--pb-space-6);
+  border-bottom: 1px solid var(--pb-border-subtle);
+}
+
+.pb-card-body {
+  padding: var(--pb-space-6);
+}
+
+.pb-card-footer {
+  padding: var(--pb-space-4) var(--pb-space-6);
+  border-top: 1px solid var(--pb-border-subtle);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Compact padding variant */
+.pb-card-compact .pb-card-header {
+  padding: var(--pb-space-3) var(--pb-space-4);
+}
+
+.pb-card-compact .pb-card-body {
+  padding: var(--pb-space-4);
+}
+
+.pb-card-compact .pb-card-footer {
+  padding: var(--pb-space-3) var(--pb-space-4);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CARD SIZES
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-card-sm {
+  border-radius: var(--pb-radius-md);
+}
+
+.pb-card-lg {
+  border-radius: var(--pb-radius-xl);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   INTERACTIVE CARD
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-card-interactive {
+  cursor: pointer;
+}
+
+.pb-card-interactive:hover {
+  border-color: var(--pb-border-strong);
+  background-color: var(--pb-bg-tertiary);
+}
+
+.pb-card-interactive:active {
+  background-color: var(--pb-bg-elevated);
+}
+

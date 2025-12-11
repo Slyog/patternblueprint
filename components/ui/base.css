@@ -1,0 +1,135 @@
+/**
+ * PatternBlueprint Design System
+ * Base Styles & Reset
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ══════════════════════════════════════════════════════════════
+   CSS RESET
+   ══════════════════════════════════════════════════════════════ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--pb-font-sans);
+  font-size: var(--pb-text-base);
+  font-weight: var(--pb-font-normal);
+  line-height: var(--pb-leading-normal);
+  color: var(--pb-text-primary);
+  background: linear-gradient(to bottom, #000000, #0a0a0a);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--pb-font-semibold);
+  line-height: var(--pb-leading-tight);
+  letter-spacing: var(--pb-tracking-tight);
+}
+
+.pb-accent {
+  color: #5ee0ff;
+}
+
+.pb-accent-hover:hover {
+  color: #5ee0ff;
+}
+
+.pb-highlight-block {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(94, 224, 255, 0.12);
+  padding: 1.25rem;
+  border-radius: 8px;
+}
+
+.pb-inline-code {
+  font-family: ui-monospace, monospace;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  color: #5ee0ff;
+  font-size: 0.95em;
+}
+
+p {
+  line-height: var(--pb-leading-relaxed);
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--pb-accent-primary);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--pb-blue-500);
+  color: var(--pb-text-primary);
+}
+
+/* Scrollbar styling for dark mode */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pb-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pb-bg-elevated);
+  border-radius: var(--pb-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pb-text-tertiary);
+}
+

@@ -1,0 +1,170 @@
+/**
+ * PatternBlueprint Design System
+ * Typography Components
+ */
+
+/* ══════════════════════════════════════════════════════════════
+   HEADINGS
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-h1 {
+  font-size: var(--pb-text-5xl);
+  font-weight: var(--pb-font-bold);
+  line-height: var(--pb-leading-tight);
+  letter-spacing: var(--pb-tracking-tighter);
+  color: #5ee0ff;
+}
+
+.pb-h2 {
+  font-size: var(--pb-text-4xl);
+  font-weight: var(--pb-font-semibold);
+  line-height: var(--pb-leading-tight);
+  letter-spacing: var(--pb-tracking-tight);
+  color: rgba(180, 240, 255, 0.65);
+}
+
+.pb-h3 {
+  font-size: var(--pb-text-3xl);
+  font-weight: var(--pb-font-semibold);
+  line-height: var(--pb-leading-snug);
+  letter-spacing: var(--pb-tracking-tight);
+  color: var(--pb-text-primary);
+}
+
+.pb-h4 {
+  font-size: var(--pb-text-2xl);
+  font-weight: var(--pb-font-semibold);
+  line-height: var(--pb-leading-snug);
+  color: var(--pb-text-primary);
+}
+
+.pb-h5 {
+  font-size: var(--pb-text-xl);
+  font-weight: var(--pb-font-medium);
+  line-height: var(--pb-leading-snug);
+  color: var(--pb-text-primary);
+}
+
+.pb-h6 {
+  font-size: var(--pb-text-lg);
+  font-weight: var(--pb-font-medium);
+  line-height: var(--pb-leading-snug);
+  color: var(--pb-text-primary);
+}
+
+/* Responsive heading adjustments */
+@media (max-width: 768px) {
+  .pb-h1 {
+    font-size: var(--pb-text-4xl);
+  }
+  
+  .pb-h2 {
+    font-size: var(--pb-text-3xl);
+  }
+  
+  .pb-h3 {
+    font-size: var(--pb-text-2xl);
+  }
+  
+  .pb-h4 {
+    font-size: var(--pb-text-xl);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BODY TEXT
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-body {
+  font-size: var(--pb-text-base);
+  font-weight: var(--pb-font-normal);
+  line-height: var(--pb-leading-relaxed);
+  color: var(--pb-text-secondary);
+}
+
+.pb-body-lg {
+  font-size: var(--pb-text-lg);
+  font-weight: var(--pb-font-normal);
+  line-height: var(--pb-leading-relaxed);
+  color: var(--pb-text-secondary);
+}
+
+.pb-body-sm {
+  font-size: var(--pb-text-sm);
+  font-weight: var(--pb-font-normal);
+  line-height: var(--pb-leading-relaxed);
+  color: var(--pb-text-secondary);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SPECIAL TEXT STYLES
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-lead {
+  font-size: var(--pb-text-xl);
+  font-weight: var(--pb-font-normal);
+  line-height: var(--pb-leading-relaxed);
+  color: var(--pb-text-secondary);
+}
+
+.pb-caption {
+  font-size: var(--pb-text-sm);
+  font-weight: var(--pb-font-normal);
+  line-height: var(--pb-leading-normal);
+  color: var(--pb-text-tertiary);
+}
+
+.pb-overline {
+  font-size: var(--pb-text-xs);
+  font-weight: var(--pb-font-semibold);
+  line-height: var(--pb-leading-normal);
+  letter-spacing: var(--pb-tracking-wider);
+  text-transform: uppercase;
+  color: var(--pb-text-tertiary);
+}
+
+.pb-code {
+  font-family: var(--pb-font-mono);
+  font-size: 0.9em;
+  padding: var(--pb-space-1) var(--pb-space-2);
+  background-color: var(--pb-bg-tertiary);
+  border-radius: var(--pb-radius-sm);
+  color: var(--pb-gold-400);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TEXT COLORS
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-text-primary {
+  color: var(--pb-text-primary);
+}
+
+.pb-text-secondary {
+  color: var(--pb-text-secondary);
+}
+
+.pb-text-tertiary {
+  color: var(--pb-text-tertiary);
+}
+
+.pb-text-muted {
+  color: var(--pb-text-muted);
+}
+
+.pb-text-blue {
+  color: var(--pb-blue-400);
+}
+
+.pb-text-gold {
+  color: var(--pb-gold-400);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TEXT ALIGNMENT
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-text-left { text-align: left; }
+.pb-text-center { text-align: center; }
+.pb-text-right { text-align: right; }
+

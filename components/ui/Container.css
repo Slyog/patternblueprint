@@ -1,0 +1,137 @@
+/**
+ * PatternBlueprint Design System
+ * Container Component
+ */
+
+/* ══════════════════════════════════════════════════════════════
+   BASE CONTAINER
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-container {
+  width: 100%;
+  max-width: var(--pb-container-xl);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--pb-space-6);
+  padding-right: var(--pb-space-6);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CONTAINER SIZES
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-container-sm {
+  max-width: var(--pb-container-sm);
+}
+
+.pb-container-md {
+  max-width: var(--pb-container-md);
+}
+
+.pb-container-lg {
+  max-width: var(--pb-container-lg);
+}
+
+.pb-container-xl {
+  max-width: var(--pb-container-xl);
+}
+
+.pb-container-2xl {
+  max-width: var(--pb-container-2xl);
+}
+
+.pb-container-full {
+  max-width: 100%;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE PADDING
+   ══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 640px) {
+  .pb-container {
+    padding-left: var(--pb-space-4);
+    padding-right: var(--pb-space-4);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pb-container {
+    padding-left: var(--pb-space-8);
+    padding-right: var(--pb-space-8);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SECTIONS
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-section {
+  padding-top: var(--pb-space-16);
+  padding-bottom: var(--pb-space-16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.pb-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.pb-section-sm {
+  padding-top: var(--pb-space-10);
+  padding-bottom: var(--pb-space-10);
+}
+
+.pb-section-lg {
+  padding-top: var(--pb-space-24);
+  padding-bottom: var(--pb-space-24);
+}
+
+@media (max-width: 768px) {
+  .pb-section {
+    padding-top: var(--pb-space-10);
+    padding-bottom: var(--pb-space-10);
+  }
+  
+  .pb-section-lg {
+    padding-top: var(--pb-space-16);
+    padding-bottom: var(--pb-space-16);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   PAGE WRAPPER
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pb-page-content {
+  flex: 1;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BACKGROUND VARIANTS
+   ══════════════════════════════════════════════════════════════ */
+
+.pb-bg-primary {
+  background-color: var(--pb-bg-primary);
+}
+
+.pb-bg-secondary {
+  background-color: var(--pb-bg-secondary);
+}
+
+.pb-bg-tertiary {
+  background-color: var(--pb-bg-tertiary);
+}
+

@@ -1,0 +1,149 @@
+/**
+ * PatternBlueprint Design System
+ * Design Tokens - Colors, Typography, Spacing
+ */
+
+:root {
+  /* ══════════════════════════════════════════════════════════════
+     COLOR SYSTEM
+     ══════════════════════════════════════════════════════════════ */
+  
+  /* Base Dark Theme */
+  --pb-bg-primary: #0a0a0f;
+  --pb-bg-secondary: #12121a;
+  --pb-bg-tertiary: #1a1a26;
+  --pb-bg-elevated: #222230;
+  
+  /* Text Colors */
+  --pb-text-primary: #f4f4f6;
+  --pb-text-secondary: #a8a8b3;
+  --pb-text-tertiary: #6b6b78;
+  --pb-text-muted: #4a4a56;
+  
+  /* Accent: Mind Blue */
+  --pb-blue-50: #e6f4ff;
+  --pb-blue-100: #b3dcff;
+  --pb-blue-200: #80c4ff;
+  --pb-blue-300: #4dacff;
+  --pb-blue-400: #1a94ff;
+  --pb-blue-500: #0080f0;
+  --pb-blue-600: #0066c2;
+  --pb-blue-700: #004d94;
+  --pb-blue-800: #003366;
+  --pb-blue-900: #001a38;
+  
+  /* Accent: Pattern Gold */
+  --pb-gold-50: #fff9e6;
+  --pb-gold-100: #ffedb3;
+  --pb-gold-200: #ffe080;
+  --pb-gold-300: #ffd44d;
+  --pb-gold-400: #ffc71a;
+  --pb-gold-500: #e6af00;
+  --pb-gold-600: #b38800;
+  --pb-gold-700: #806100;
+  --pb-gold-800: #4d3a00;
+  --pb-gold-900: #1a1300;
+  
+  /* Semantic Colors */
+  --pb-accent-primary: var(--pb-blue-500);
+  --pb-accent-primary-hover: var(--pb-blue-400);
+  --pb-accent-secondary: var(--pb-gold-500);
+  --pb-accent-secondary-hover: var(--pb-gold-400);
+  
+  /* Borders */
+  --pb-border-subtle: rgba(255, 255, 255, 0.06);
+  --pb-border-default: rgba(255, 255, 255, 0.1);
+  --pb-border-strong: rgba(255, 255, 255, 0.16);
+  
+  /* ══════════════════════════════════════════════════════════════
+     TYPOGRAPHY SCALE
+     ══════════════════════════════════════════════════════════════ */
+  
+  /* Font Families */
+  --pb-font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --pb-font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  
+  /* Font Sizes - Using a 1.25 modular scale */
+  --pb-text-xs: 0.75rem;     /* 12px */
+  --pb-text-sm: 0.875rem;    /* 14px */
+  --pb-text-base: 1rem;      /* 16px */
+  --pb-text-lg: 1.125rem;    /* 18px */
+  --pb-text-xl: 1.25rem;     /* 20px */
+  --pb-text-2xl: 1.5rem;     /* 24px */
+  --pb-text-3xl: 1.875rem;   /* 30px */
+  --pb-text-4xl: 2.25rem;    /* 36px */
+  --pb-text-5xl: 3rem;       /* 48px */
+  --pb-text-6xl: 3.75rem;    /* 60px */
+  
+  /* Line Heights */
+  --pb-leading-none: 1;
+  --pb-leading-tight: 1.2;
+  --pb-leading-snug: 1.35;
+  --pb-leading-normal: 1.5;
+  --pb-leading-relaxed: 1.65;
+  
+  /* Font Weights */
+  --pb-font-light: 300;
+  --pb-font-normal: 400;
+  --pb-font-medium: 500;
+  --pb-font-semibold: 600;
+  --pb-font-bold: 700;
+  
+  /* Letter Spacing */
+  --pb-tracking-tighter: -0.03em;
+  --pb-tracking-tight: -0.015em;
+  --pb-tracking-normal: 0;
+  --pb-tracking-wide: 0.025em;
+  --pb-tracking-wider: 0.05em;
+  
+  /* ══════════════════════════════════════════════════════════════
+     SPACING SYSTEM
+     ══════════════════════════════════════════════════════════════ */
+  
+  /* Base unit: 4px */
+  --pb-space-0: 0;
+  --pb-space-1: 0.25rem;   /* 4px */
+  --pb-space-2: 0.5rem;    /* 8px */
+  --pb-space-3: 0.75rem;   /* 12px */
+  --pb-space-4: 1rem;      /* 16px */
+  --pb-space-5: 1.25rem;   /* 20px */
+  --pb-space-6: 1.5rem;    /* 24px */
+  --pb-space-8: 2rem;      /* 32px */
+  --pb-space-10: 2.5rem;   /* 40px */
+  --pb-space-12: 3rem;     /* 48px */
+  --pb-space-16: 4rem;     /* 64px */
+  --pb-space-20: 5rem;     /* 80px */
+  --pb-space-24: 6rem;     /* 96px */
+  --pb-space-32: 8rem;     /* 128px */
+  
+  /* ══════════════════════════════════════════════════════════════
+     LAYOUT
+     ══════════════════════════════════════════════════════════════ */
+  
+  /* Container Widths */
+  --pb-container-sm: 640px;
+  --pb-container-md: 768px;
+  --pb-container-lg: 1024px;
+  --pb-container-xl: 1280px;
+  --pb-container-2xl: 1440px;
+  
+  /* Border Radius */
+  --pb-radius-none: 0;
+  --pb-radius-sm: 4px;
+  --pb-radius-md: 8px;
+  --pb-radius-lg: 12px;
+  --pb-radius-xl: 16px;
+  --pb-radius-2xl: 24px;
+  --pb-radius-full: 9999px;
+  
+  /* Shadows */
+  --pb-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --pb-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --pb-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --pb-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+  
+  /* Grid */
+  --pb-grid-columns: 12;
+  --pb-grid-gap: var(--pb-space-6);
+}
+
